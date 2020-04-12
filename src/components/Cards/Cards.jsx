@@ -17,23 +17,27 @@ const Cards = ({ data: {confirmed, recovered, deaths, lastUpdate }}) => {
             <Typography variant="h5">
               <CountUp start={0} end={confirmed.value} duration={2.5} separator="," />
             </Typography>
-  <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
+            <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
             <Typography variant="body2">Number of COVID-19 active cases</Typography>
           </CardContent>
         </Grid>
         <Grid item component={Card}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>RECOVERED</Typography>
-            <Typography variant="h5">REAL DATA</Typography>
-            <Typography color="textSecondary">REAL DATE</Typography>
+            <Typography variant="h5">
+              <CountUp start={0} end={recovered.value} duration={2.5} separator="," />
+            </Typography>
+            <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
             <Typography variant="body2">Number of COVID-19 recovered cases</Typography>
           </CardContent>
         </Grid>
         <Grid item component={Card}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>DEATHS</Typography>
-            <Typography variant="h5">REAL DATA</Typography>
-            <Typography color="textSecondary">REAL DATE</Typography>
+            <Typography variant="h5">
+              <CountUp start={0} end={deaths.value} duration={2.5} separator="," />
+            </Typography>
+            <Typography color="textSecondary">{new Date(lastUpdate).toDateString()}</Typography>
             <Typography variant="body2">Number of deaths caused by COVID-19</Typography>
           </CardContent>
         </Grid>
