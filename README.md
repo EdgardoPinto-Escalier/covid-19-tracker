@@ -6,7 +6,7 @@ This web application has been created to make it easier for me to visualize data
 It also uses different resources such as: 
 
 - Material UI
-- Charts.js, 
+- Charts.js 
 - React Hooks
 - API data fetching
 
